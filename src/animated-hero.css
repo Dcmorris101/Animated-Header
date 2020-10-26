@@ -1,0 +1,183 @@
+.hero-large2 h1 {
+  font-family: "LL Akkurat Bold Web",sans-serif;
+}
+.Site_12 .hero-large2 h1, .Site_12 .hero-large2 h2 {
+  font-family: "LL Akkurat Light Web",sans-serif;
+}
+.hero-large2 .delayed-animation {opacity:0; position: absolute;}
+.hero-large2 {
+  /*min-height: 620px;*/
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.15), transparent);
+}
+
+.hero-large2 #swoosh {
+  position: absolute;
+  height: 120%;
+  width: 2000px;
+  right: -100px;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* TEST #2 */
+
+.hero-large2 #swoosh #theSquare {
+  visibility: hidden;
+}
+
+.hero-large2 #swoosh #theSquare2 {
+  opacity: 0;
+}
+
+.hero-large2 #dashed-circle {
+  position: absolute;
+  z-index: 2;
+  right: -300px;
+  top: -400px;
+}
+
+.hero-large2 #dashed-circle .dashed {
+  opacity: 0;
+}
+
+.hero-large2 #swoosh path.has-animation {
+  stroke-dasharray: 25px 25px;
+  stroke-dashoffset: 25px;
+}
+
+.hero-large2 .text-column {
+  padding: 15px 15px 15px 0;
+}
+
+.hero-large2 .flex-box {
+  z-index: 50;
+}
+
+.hero-large2.flex-box .main-content {
+  align-items: center;
+}
+
+.hero-large2 .prominent-subhead {
+  font-family: "LL Akkurat Bold Web", sans-serif;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.hero-large2 p {
+  font-size: 1.5em;
+  font-family: "LL Akkurat Regular Web", sans-serif;
+}
+
+.hero-large2 .repeating-children.buttons .singleitem {
+  width: 100%;
+}
+
+/*.hero-large2 .button-primary {
+  width:  270px;
+}*/
+
+.hero-large2 .header-image-video {
+  margin: auto;
+  text-align: center;
+}
+
+.hero-large2 .header-image-video img {
+  max-height: 400px;
+}
+
+
+.header-image.show-video,
+.header-image.show-none,
+.header-video.show-image,
+.header-video.show-none {
+  display: none;
+}
+
+.hero-large2 .headline-overlay {
+  position: absolute; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+}
+
+.hero-large2 .color {
+  position: absolute; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  left: 0;
+  bottom: 0;
+  z-index:3;
+  display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .hero-large2 .header-image-video {
+    flex-basis: 100%;
+  }
+  .hero-large2 .button-primary {
+    width: 100%;
+  }
+  .hero-large2 p {
+    font-size: 1.125em;
+    line-height: 1.33em;
+  }
+  .hero-large2 .header-shapes svg {
+    opacity: .2;
+  }
+  .hero-large2 #swoosh {
+    height: 100%;
+  }
+  .hero-large2 .header-shapes #dashed-circle {
+    display: none;
+  }
+  .hero-large2 .headline-overlay {
+    display: block;
+  }
+
+  .hero-large2 .color {
+    display: block;
+  }
+  .hero-large2 .header-shapes {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .hero-large2 #dashed-circle {
+    right: -400px;
+    top: -200px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  .hero-large2.flex-box {
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-start;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+  }
+  /*.hero-large2 #swoosh {
+    opacity: inherit;
+  }*/
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) and (min-width: 768px) {
+  /* IE10+ CSS styles go here */
+
+}

@@ -1,0 +1,40 @@
+<params>
+  <parameter control-type='readme' id='Read_Me'><![CDATA[
+<b>Overview</b><br />
+<p>This is a Large Hero section module. This module contains a header, subhead (goes above the header), summary, buttons, and adjustable colors of 'slides'. The first and last slide transition colors will always be the same (for looping puposes). You can edit the 3 images inside the header that will appear behind the semi-circle masking.</p>
+<p>EXAMPLE:<br>
+<img src="/img/_prod/galleries/redesign-modules/large hero.png" /></p>
+~ReadMeContainers~
+]]></parameter>
+  <parameter data-type='advanced' control-type='plaintext' id='AdditionalClassNames'><![CDATA[]]></parameter>
+  <parameter control-type='options' options='~Colors~' id='Background_Color'><![CDATA[green]]></parameter>
+
+  <parameter control-type='image' id='Slide_Image'><![CDATA[/img/_prod/galleries/Solutions Section/home-hero-1000-6.jpg]]></parameter>
+  <parameter data-type='advanced' control-type='options' options='~Containers~' id='Content_In_Container'><![CDATA[container]]></parameter>
+  <parameter data-type='advanced' control-type='options' options='~ContentWidths~' id='Content_Width'><![CDATA[container-12]]></parameter>
+  <parameter data-type='advanced' control-type='options' options='~FlexAlignmentsBasic~' id='Content_Alignment'><![CDATA[justify-left]]></parameter>
+  <parameter data-type='advanced' control-type='options' options='~PaddingOptions~' id='Padding_Options'><![CDATA[pb80 pt80]]></parameter>
+  <parameter control-type='options' options='~Colors~' id='Text_Color'><![CDATA[white]]></parameter>
+  <parameter control-type='options' options='~ContentWidths~' id='Text_Column_Width'><![CDATA[container-6]]></parameter>
+  <parameter control-type='plaintext' id='Header_Title'><![CDATA[Title]]></parameter>
+  <parameter control-type='plaintext' id='Header_Subtitle'><![CDATA[]]></parameter>
+  <parameter control-type='options' options='~TitleWeights~' id='Title_Weight'><![CDATA[h1]]></parameter>
+  <parameter control-type='richtext' id='Header_Summary'><![CDATA[]]></parameter>
+  <parameter data-type='advanced' control-type='options' options='none,video,image' id='Show_Media'><![CDATA[none]]></parameter>
+  <parameter parent-id='Show_Media' show-parent-value='image' control-type='image' id='Image_Path'><![CDATA[/img/173/product_ch_new_task.png]]></parameter>
+  <parameter parent-id='Show_Media' show-parent-value='image' control-type='plaintext' id='Image_Alt'><![CDATA[image alt]]></parameter>
+  <parameter parent-id='Show_Media' show-parent-value='video' control-type='plaintext' id='Vidyard_Video_ID'><![CDATA[]]></parameter>
+
+  <parameter data-type='advanced' control-type='plaintext' id='Mobile_Background_Position'><![CDATA[50% 50%]]></parameter>
+  <parameter data-type='advanced' control-type='plaintext' id='Mobile_Background_Size'><![CDATA[cover]]></parameter>
+  <parameter data-type='advanced' control-type='plaintext' id='Mobile_Background_Repeat'><![CDATA[no-repeat]]></parameter>
+  <parameter data-type='advanced' control-type='plaintext' id='Overlay_Mobile_Opacity_Percentage'><![CDATA[90]]></parameter>
+
+   <repeating id='repeating-content' data-index='1'>
+     <parameter repeating-id='repeating-content' control-type='options' options='_self,_blank' id='Button_Open_Target'><![CDATA[_self]]></parameter>
+     <parameter repeating-id='repeating-content' control-type='link' id='Button_URL'><![CDATA[]]></parameter>
+     <parameter repeating-id='repeating-content' control-type='plaintext' id='Button_Link_Text'><![CDATA[Learn More]]></parameter>
+     <parameter repeating-id='repeating-content' control-type='options' options='~ButtonStyles~' id='Button_Style'><![CDATA[none]]></parameter>
+     <parameter repeating-id='repeating-content' control-type='options' options='~ButtonColors~' id='Button_Color'><![CDATA[Blue]]></parameter>
+   </repeating>
+</params>
